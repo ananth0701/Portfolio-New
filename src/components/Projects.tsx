@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Github, Heart, BarChart3, Brain, TrendingUp, Database, Zap, Award } from 'lucide-react';
+import { ExternalLink, Github, Heart, BarChart3, Database, Award } from 'lucide-react';
 
 const Projects = () => {
   const featuredProjects = [
@@ -29,45 +29,6 @@ const Projects = () => {
     }
   ];
 
-  const otherProjects = [
-    {
-      title: 'Advanced ML Model Optimization',
-      description: 'Comprehensive exploration of advanced machine learning techniques including PCA, ensemble learning, and deep learning applications.',
-      technologies: ['Python', 'Scikit-learn', 'PCA', 'Ensemble Methods', 'Deep Learning'],
-      image: Brain,
-      github: 'https://github.com/ananth0701',
-      category: 'Machine Learning',
-      gradient: 'from-violet-500 to-purple-600'
-    },
-    {
-      title: 'Statistical Data Analysis Suite',
-      description: 'Conducted comprehensive exploratory data analysis using Python libraries with advanced statistical methods for pattern recognition.',
-      technologies: ['Python', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'Statistical Analysis'],
-      image: TrendingUp,
-      github: 'https://github.com/ananth0701',
-      category: 'Data Analysis',
-      gradient: 'from-emerald-500 to-teal-600'
-    },
-    {
-      title: 'Data Preprocessing Pipeline',
-      description: 'Developed robust data preprocessing and feature engineering pipeline to enhance data quality and model performance.',
-      technologies: ['Python', 'Pandas', 'NumPy', 'Data Cleaning', 'Feature Engineering'],
-      image: Database,
-      github: 'https://github.com/ananth0701',
-      category: 'Data Engineering',
-      gradient: 'from-orange-500 to-amber-600'
-    },
-    {
-      title: 'Business Intelligence Dashboard',
-      description: 'Created dynamic business intelligence dashboard with real-time data visualization and interactive filtering capabilities.',
-      technologies: ['Tableau', 'Data Visualization', 'Business Intelligence', 'Dashboard Design'],
-      image: Zap,
-      github: 'https://github.com/ananth0701',
-      category: 'Business Intelligence',
-      gradient: 'from-cyan-500 to-blue-600'
-    }
-  ];
-
   return (
     <section id="projects" className="py-24 bg-gradient-to-br from-slate-50 to-blue-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -75,8 +36,8 @@ const Projects = () => {
           <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-6">Featured Projects</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto mb-6"></div>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            A showcase of data science projects demonstrating machine learning expertise, 
-            statistical analysis, and advanced data visualization solutions
+            A showcase of data science projects demonstrating data visualization expertise, 
+            statistical analysis, and advanced analytics solutions
           </p>
         </div>
 
@@ -162,65 +123,6 @@ const Projects = () => {
                       <span>Live Demo</span>
                     </a>
                   </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Other Projects */}
-        <div>
-          <h3 className="text-2xl font-bold text-slate-800 mb-8 text-center">Additional Projects</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {otherProjects.map((project, index) => (
-              <div key={index} className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-slate-200">
-                {/* Compact Header */}
-                <div className={`bg-gradient-to-r ${project.gradient} p-6 text-white relative`}>
-                  <div className="absolute top-2 right-2 opacity-20">
-                    <project.image size={48} />
-                  </div>
-                  <div className="relative z-10">
-                    <div className="p-2 bg-white/20 rounded-lg backdrop-blur-sm inline-block mb-3">
-                      <project.image size={24} />
-                    </div>
-                    <h4 className="text-lg font-bold mb-2">{project.title}</h4>
-                    <span className="px-3 py-1 bg-white/20 backdrop-blur-sm text-xs font-medium rounded-full">
-                      {project.category}
-                    </span>
-                  </div>
-                </div>
-                
-                {/* Compact Content */}
-                <div className="p-6">
-                  <p className="text-slate-600 text-sm leading-relaxed mb-4">{project.description}</p>
-                  
-                  {/* Technologies - Limited */}
-                  <div className="flex flex-wrap gap-1 mb-4">
-                    {project.technologies.slice(0, 3).map((tech: string, techIndex: number) => (
-                      <span
-                        key={techIndex}
-                        className="px-2 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-md"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                    {project.technologies.length > 3 && (
-                      <span className="px-2 py-1 bg-slate-100 text-slate-500 text-xs rounded-md">
-                        +{project.technologies.length - 3} more
-                      </span>
-                    )}
-                  </div>
-                  
-                  {/* Action */}
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center space-x-2 w-full py-2 bg-slate-900 text-white rounded-lg hover:bg-slate-800 transition-colors duration-200 text-sm font-medium"
-                  >
-                    <Github size={16} />
-                    <span>View Code</span>
-                  </a>
                 </div>
               </div>
             ))}
