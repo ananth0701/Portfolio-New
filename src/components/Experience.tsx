@@ -17,32 +17,6 @@ const Experience = () => {
       ]
     },
     {
-      title: 'Diabetes Prediction Project',
-      company: 'Personal Project',
-      location: 'Remote',
-      period: 'June 2024 - July 2024',
-      type: 'project',
-      description: [
-        'Developed diabetes risk prediction model using Pima Indian Diabetes Dataset with 96% accuracy',
-        'Optimized Logistic Regression, Decision Trees, and KNN algorithms, reducing false positives by 12%',
-        'Conducted comprehensive EDA identifying three key predictors that increased precision by 15%',
-        'Enhanced data integrity through advanced preprocessing and normalization techniques'
-      ]
-    },
-    {
-      title: 'Tableau Dashboard Development',
-      company: 'Personal Project',
-      location: 'Remote',
-      period: 'March 2024 – April 2024',
-      type: 'project',
-      description: [
-        'Built interactive dashboard analyzing automotive industry trends by fuel type, transmission, and ownership',
-        'Identified peak dealer sales (~₹625M) from 2015–2020 through comprehensive year-wise price analysis',
-        'Compared average kilometers and pricing patterns, highlighting high-value electric vehicle segments',
-        'Enabled data-driven inventory and pricing decisions using dynamic filters on key car attributes'
-      ]
-    },
-    {
       title: 'Competitive Programming & Hackathons',
       company: 'Various Competitions',
       location: 'India',

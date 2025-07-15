@@ -11,9 +11,16 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Here you would typically send the form data to a backend service
-    alert('Thank you for your message! I\'ll get back to you soon.');
+    
+    // Create mailto link with form data
+    const subject = formData.subject || 'Contact from Portfolio Website';
+    const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`;
+    const mailtoLink = `mailto:ananthnatherukulla@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    // Open email client
+    window.location.href = mailtoLink;
+    
+    // Reset form
     setFormData({ name: '', email: '', subject: '', message: '' });
   };
 
@@ -180,23 +187,17 @@ const Contact = () => {
 
                 <div>
                   <label htmlFor="subject" className="block text-sm font-semibold text-gray-700 mb-2">
-                    Subject *
+                    Subject
                   </label>
-                  <select
+                  <input
+                    type="text"
                     id="subject"
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 bg-white"
-                  >
-                    <option value="">Select a subject</option>
-                    <option value="internship">Internship Opportunity</option>
-                    <option value="collaboration">Project Collaboration</option>
-                    <option value="consultation">Data Science Consultation</option>
-                    <option value="networking">Professional Networking</option>
-                    <option value="other">Other</option>
-                  </select>
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white"
+                    placeholder="Enter your subject (optional)"
+                  />
                 </div>
 
                 <div>
