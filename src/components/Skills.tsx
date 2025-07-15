@@ -28,12 +28,14 @@ const Skills = () => {
     {
       title: 'Data Visualization',
       icon: BarChart3,
-      color: 'from-green-500 to-green-600',
+      color: 'from-emerald-500 to-teal-600',
       skills: [
-        { name: 'Tableau', level: 85 },
-        { name: 'Matplotlib', level: 85 },
-        { name: 'Seaborn', level: 80 },
-        { name: 'Plotly', level: 75 }
+        { name: 'Tableau', level: 92 },
+        { name: 'Power BI', level: 88 },
+        { name: 'Matplotlib', level: 90 },
+        { name: 'Seaborn', level: 88 },
+        { name: 'Plotly', level: 85 },
+        { name: 'D3.js', level: 75 }
       ]
     },
     {

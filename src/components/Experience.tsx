@@ -64,7 +64,7 @@ const Experience = () => {
       location: 'Phagwara, Punjab',
       period: '2022 - 2026',
       details: [
-        'CGPA: 6.93/10',
+        'CGPA: 7.1/10',
         'Specialization: Data Science and Machine Learning',
         'Relevant Coursework: Data Structures, Algorithms, Database Management, Software Engineering'
       ]

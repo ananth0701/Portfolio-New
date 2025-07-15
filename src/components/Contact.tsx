@@ -96,7 +96,7 @@ const Contact = () => {
               <h4 className="text-lg font-semibold text-gray-900">Quick Actions</h4>
               <div className="grid grid-cols-2 gap-4">
                 <a
-                  href="https://github.com/ananth0710"
+                  href="https://github.com/ananth0701"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center space-x-2 p-4 bg-gray-900 text-white rounded-xl hover:bg-gray-800 transition-colors duration-200"
@@ -119,7 +119,7 @@ const Contact = () => {
               <h4 className="text-lg font-semibold text-gray-900">Connect on Social</h4>
               <div className="flex space-x-4">
                 <a
-                  href="https://github.com/ananth0710"
+                  href="https://github.com/ananth0701"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 bg-gray-100 rounded-xl hover:bg-gray-200 transition-colors duration-200"

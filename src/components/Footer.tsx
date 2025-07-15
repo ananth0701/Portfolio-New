@@ -16,7 +16,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://github.com/ananth0710"
+                href="https://github.com/ananth0701"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors duration-200"
@@ -78,7 +78,7 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-300">
               <li className="flex items-center">
                 <FileText size={16} className="mr-2" />
-                <a href="https://github.com/ananth0710" className="hover:text-white transition-colors duration-200">
+                <a href="https://github.com/ananth0701" className="hover:text-white transition-colors duration-200">
                   Resume/CV
                 </a>
               </li>
