@@ -76,7 +76,6 @@ The built files will be in the `dist` directory.
 - **Email**: ananthnatherukulla@gmail.com
 - **LinkedIn**: [linkedin.com/in/ananthnatherukulla](https://linkedin.com/in/ananthnatherukulla)
 - **GitHub**: [github.com/ananth0710](https://github.com/ananth0710)
-- **Phone**: +91-6301658065
 
 ## 📄 License
 
