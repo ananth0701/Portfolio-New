@@ -77,11 +77,11 @@ const Experience = () => {
   };
 
   return (
-    <section id="experience" className="py-20 bg-gray-50">
+    <section id="experience" className="py-20 bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Experience & Education</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <h2 className="text-4xl font-bold text-white mb-4">Experience & Education</h2>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             My academic journey and professional experience in data science and machine learning
           </p>
         </div>
@@ -89,28 +89,28 @@ const Experience = () => {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Experience */}
           <div>
-            <h3 className="text-2xl font-semibold text-gray-900 mb-8 flex items-center">
+            <h3 className="text-2xl font-semibold text-white mb-8 flex items-center">
               <Briefcase size={24} className="mr-3 text-purple-600" />
               Professional Experience
             </h3>
             <div className="relative">
-              <div className="absolute left-8 top-0 h-full w-0.5 bg-purple-200"></div>
+              <div className="absolute left-8 top-0 h-full w-0.5 bg-purple-600/30"></div>
               
               {experiences.map((exp, index) => (
                 <div key={index} className="relative mb-12 last:mb-0">
-                  <div className={`absolute left-6 w-4 h-4 ${getTypeColor(exp.type)} rounded-full border-4 border-white shadow-lg`}></div>
+                  <div className={`absolute left-6 w-4 h-4 ${getTypeColor(exp.type)} rounded-full border-4 border-gray-900 shadow-lg`}></div>
                   
-                  <div className="ml-20 bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                  <div className="ml-20 bg-gray-800 rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border border-gray-700">
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
                       <div>
-                        <h4 className="text-xl font-semibold text-gray-900 mb-1">
+                        <h4 className="text-xl font-semibold text-white mb-1">
                           {exp.title}
                         </h4>
                         <p className="text-lg text-purple-600 font-medium">
                           {exp.company}
                         </p>
                       </div>
-                      <div className="flex flex-col sm:items-end text-sm text-gray-500 mt-2 sm:mt-0">
+                      <div className="flex flex-col sm:items-end text-sm text-gray-400 mt-2 sm:mt-0">
                         <div className="flex items-center mb-1">
                           <Calendar size={16} className="mr-1" />
                           <span>{exp.period}</span>
@@ -126,7 +126,7 @@ const Experience = () => {
                       {exp.description.map((item, itemIndex) => (
                         <li key={itemIndex} className="flex items-start">
                           <span className="w-2 h-2 bg-purple-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                          <span className="text-gray-600">{item}</span>
+                          <span className="text-gray-300">{item}</span>
                         </li>
                       ))}
                     </ul>
@@ -138,23 +138,23 @@ const Experience = () => {
 
           {/* Education */}
           <div>
-            <h3 className="text-2xl font-semibold text-gray-900 mb-8 flex items-center">
+            <h3 className="text-2xl font-semibold text-white mb-8 flex items-center">
               <GraduationCap size={24} className="mr-3 text-blue-600" />
               Education
             </h3>
             <div className="space-y-8">
               {education.map((edu, index) => (
-                <div key={index} className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                <div key={index} className="bg-gray-800 rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border border-gray-700">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
                     <div>
-                      <h4 className="text-xl font-semibold text-gray-900 mb-1">
+                      <h4 className="text-xl font-semibold text-white mb-1">
                         {edu.degree}
                       </h4>
                       <p className="text-lg text-blue-600 font-medium">
                         {edu.school}
                       </p>
                     </div>
-                    <div className="flex flex-col sm:items-end text-sm text-gray-500 mt-2 sm:mt-0">
+                    <div className="flex flex-col sm:items-end text-sm text-gray-400 mt-2 sm:mt-0">
                       <div className="flex items-center mb-1">
                         <Calendar size={16} className="mr-1" />
                         <span>{edu.period}</span>
@@ -170,7 +170,7 @@ const Experience = () => {
                     {edu.details.map((detail, detailIndex) => (
                       <li key={detailIndex} className="flex items-start">
                         <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                        <span className="text-gray-600">{detail}</span>
+                        <span className="text-gray-300">{detail}</span>
                       </li>
                     ))}
                   </ul>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Github, Heart, BarChart3, Database, Award } from 'lucide-react';
+import { ExternalLink, Github, Heart, BarChart3, Database, Award, Brain, TrendingUp } from 'lucide-react';
 
 const Projects = () => {
   const featuredProjects = [
@@ -30,12 +30,12 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-24 bg-gradient-to-br from-slate-50 to-blue-50">
+    <section id="projects" className="py-24 bg-gradient-to-br from-gray-900 to-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-6">Featured Projects</h2>
+          <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">Featured Projects</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto mb-6"></div>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             A showcase of data science projects demonstrating data visualization expertise, 
             statistical analysis, and advanced analytics solutions
           </p>
@@ -45,12 +45,12 @@ const Projects = () => {
         <div className="mb-20">
           <div className="flex items-center justify-center mb-12">
             <Award className="text-amber-500 mr-3" size={28} />
-            <h3 className="text-2xl font-bold text-slate-800">Flagship Projects</h3>
+            <h3 className="text-2xl font-bold text-white">Flagship Projects</h3>
           </div>
           
           <div className="grid lg:grid-cols-2 gap-8">
             {featuredProjects.map((project, index) => (
-              <div key={index} className="group relative bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border border-slate-200">
+              <div key={index} className="group relative bg-gray-800 rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border border-gray-700">
                 {/* Header with enhanced gradient */}
                 <div className={`bg-gradient-to-br ${project.gradient} p-8 text-white relative overflow-hidden`}>
                   <div className="absolute top-0 right-0 w-40 h-40 opacity-10 transform rotate-12">
@@ -75,12 +75,12 @@ const Projects = () => {
                 <div className="p-8">
                   {/* Key Metrics */}
                   <div className="grid grid-cols-1 gap-4 mb-8">
-                    <div className="bg-gradient-to-r from-slate-50 to-blue-50 rounded-2xl p-6 border border-slate-200">
-                      <h4 className="text-sm font-semibold text-slate-600 mb-3 uppercase tracking-wide">Key Achievements</h4>
+                    <div className="bg-gradient-to-r from-gray-700 to-gray-600 rounded-2xl p-6 border border-gray-600">
+                      <h4 className="text-sm font-semibold text-gray-300 mb-3 uppercase tracking-wide">Key Achievements</h4>
                       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                         {project.metrics.map((metric: string, metricIndex: number) => (
                           <div key={metricIndex} className="text-center">
-                            <div className="text-lg font-bold text-slate-800">{metric}</div>
+                            <div className="text-lg font-bold text-white">{metric}</div>
                           </div>
                         ))}
                       </div>
@@ -89,12 +89,12 @@ const Projects = () => {
                   
                   {/* Technologies */}
                   <div className="mb-8">
-                    <h4 className="text-sm font-semibold text-slate-600 mb-4 uppercase tracking-wide">Technologies Used</h4>
+                    <h4 className="text-sm font-semibold text-gray-300 mb-4 uppercase tracking-wide">Technologies Used</h4>
                     <div className="flex flex-wrap gap-2">
                       {project.technologies.map((tech: string, techIndex: number) => (
                         <span
                           key={techIndex}
-                          className="px-4 py-2 bg-blue-100 text-blue-800 text-sm font-medium rounded-full border border-blue-200 hover:bg-blue-200 transition-colors"
+                          className="px-4 py-2 bg-blue-900/30 text-blue-300 text-sm font-medium rounded-full border border-blue-700 hover:bg-blue-800/40 transition-colors"
                         >
                           {tech}
                         </span>
@@ -108,7 +108,7 @@ const Projects = () => {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center space-x-2 px-6 py-3 bg-slate-900 text-white rounded-xl hover:bg-slate-800 transition-all duration-200 text-sm font-semibold shadow-lg hover:shadow-xl"
+                      className="flex items-center space-x-2 px-6 py-3 bg-gray-900 text-white rounded-xl hover:bg-gray-700 transition-all duration-200 text-sm font-semibold shadow-lg hover:shadow-xl"
                     >
                       <Github size={18} />
                       <span>View Source</span>
@@ -117,7 +117,7 @@ const Projects = () => {
                       href={project.demo}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center space-x-2 px-6 py-3 border-2 border-slate-300 text-slate-700 rounded-xl hover:bg-slate-50 transition-all duration-200 text-sm font-semibold"
+                      className="flex items-center space-x-2 px-6 py-3 border-2 border-gray-600 text-gray-300 rounded-xl hover:bg-gray-700 transition-all duration-200 text-sm font-semibold"
                     >
                       <ExternalLink size={18} />
                       <span>Live Demo</span>
@@ -131,12 +131,12 @@ const Projects = () => {
 
         {/* Call to Action */}
         <div className="text-center mt-20">
-          <div className="bg-white rounded-3xl shadow-xl p-10 max-w-3xl mx-auto border border-slate-200">
+          <div className="bg-gray-800 rounded-3xl shadow-xl p-10 max-w-3xl mx-auto border border-gray-700">
             <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
               <Database size={32} className="text-white" />
             </div>
-            <h3 className="text-3xl font-bold text-slate-900 mb-4">Ready to Collaborate?</h3>
-            <p className="text-slate-600 mb-8 text-lg leading-relaxed">
+            <h3 className="text-3xl font-bold text-white mb-4">Ready to Collaborate?</h3>
+            <p className="text-gray-300 mb-8 text-lg leading-relaxed">
               I'm passionate about solving complex data challenges and creating impactful visualizations. 
               Let's connect and explore how we can transform data into actionable insights together.
             </p>
