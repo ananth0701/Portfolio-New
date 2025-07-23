@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowDown, Github, Linkedin, Mail, Database, Download, Phone } from 'lucide-react';
+import { ArrowDown, Github, Linkedin, Mail, Database, Download, Phone, BarChart3, TrendingUp, Brain } from 'lucide-react';
 
 const Hero = () => {
   const scrollToAbout = () => {
