@@ -36,7 +36,7 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">Let's Connect</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto mb-6 hover:w-32 transition-all duration-300"></div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Ready to collaborate on exciting data science projects or discuss opportunities? 
             I'd love to hear from you and explore how we can work together.

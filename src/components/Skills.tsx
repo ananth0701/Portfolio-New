@@ -75,7 +75,7 @@ const Skills = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">Technical Skills</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto mb-6 hover:w-32 transition-all duration-300"></div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             A comprehensive toolkit spanning data visualization, data analysis, and cloud technologies
           </p>
@@ -99,7 +99,7 @@ const Skills = () => {
                 {category.skills.map((skill, skillIndex) => (
                   <div key={skillIndex} className="space-y-2">
                     <div className="flex justify-between items-center">
-                      <span className="font-medium text-white group-hover:text-blue-300 transition-colors duration-300">{skill.name}</span>
+                      <span className="font-medium text-white">{skill.name}</span>
                       <span className="text-sm font-bold text-gray-300">{skill.level}%</span>
                     </div>
                     <div className="w-full bg-gray-700 rounded-full h-3 overflow-hidden">
