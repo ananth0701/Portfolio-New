@@ -53,7 +53,7 @@ const Navigation = () => {
                 <button
                   key={link.href}
                   onClick={() => scrollToSection(link.href)}
-                  className="text-gray-300 hover:text-blue-400 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                  className="text-gray-300 hover:text-blue-400 hover:bg-gray-800/50 px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 hover:scale-105"
                 >
                   {link.label}
                 </button>
@@ -65,7 +65,7 @@ const Navigation = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-300 hover:text-blue-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-300 hover:text-blue-400 hover:bg-gray-800 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500 transition-all duration-200"
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -81,7 +81,7 @@ const Navigation = () => {
               <button
                 key={link.href}
                 onClick={() => scrollToSection(link.href)}
-                className="text-gray-300 hover:text-blue-400 block px-3 py-2 text-base font-medium w-full text-left"
+                className="text-gray-300 hover:text-blue-400 hover:bg-gray-800/50 block px-3 py-2 rounded-lg text-base font-medium w-full text-left transition-all duration-200"
               >
                 {link.label}
               </button>

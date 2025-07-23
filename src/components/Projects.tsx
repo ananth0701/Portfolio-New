@@ -50,7 +50,7 @@ const Projects = () => {
           
           <div className="grid lg:grid-cols-2 gap-8">
             {featuredProjects.map((project, index) => (
-              <div key={index} className="group relative bg-gray-800 rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border border-gray-700">
+              <div key={index} className="group relative bg-gray-800 rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 hover:-translate-y-3 border border-gray-700 hover:border-blue-500/50">
                 {/* Header with enhanced gradient */}
                 <div className={`bg-gradient-to-br ${project.gradient} p-8 text-white relative overflow-hidden`}>
                   <div className="absolute top-0 right-0 w-40 h-40 opacity-10 transform rotate-12">
@@ -58,7 +58,7 @@ const Projects = () => {
                   </div>
                   <div className="relative z-10">
                     <div className="flex items-start justify-between mb-6">
-                      <div className="p-4 bg-white/20 rounded-2xl backdrop-blur-sm border border-white/30">
+                      <div className="p-4 bg-white/20 rounded-2xl backdrop-blur-sm border border-white/30 group-hover:scale-110 transition-transform duration-300">
                         <project.image size={36} />
                       </div>
                       <span className="px-4 py-2 bg-white/20 backdrop-blur-sm text-sm font-semibold rounded-full border border-white/30">
@@ -75,7 +75,7 @@ const Projects = () => {
                 <div className="p-8">
                   {/* Key Metrics */}
                   <div className="grid grid-cols-1 gap-4 mb-8">
-                    <div className="bg-gradient-to-r from-gray-700 to-gray-600 rounded-2xl p-6 border border-gray-600">
+                    <div className="bg-gradient-to-r from-gray-700 to-gray-600 rounded-2xl p-6 border border-gray-600 hover:from-gray-600 hover:to-gray-500 hover:border-blue-500/50 transition-all duration-300">
                       <h4 className="text-sm font-semibold text-gray-300 mb-3 uppercase tracking-wide">Key Achievements</h4>
                       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                         {project.metrics.map((metric: string, metricIndex: number) => (
@@ -94,7 +94,7 @@ const Projects = () => {
                       {project.technologies.map((tech: string, techIndex: number) => (
                         <span
                           key={techIndex}
-                          className="px-4 py-2 bg-blue-900/30 text-blue-300 text-sm font-medium rounded-full border border-blue-700 hover:bg-blue-800/40 transition-colors"
+                          className="px-4 py-2 bg-blue-900/30 text-blue-300 text-sm font-medium rounded-full border border-blue-700 hover:bg-blue-800/40 hover:scale-105 hover:border-blue-500 transition-all duration-300 cursor-pointer"
                         >
                           {tech}
                         </span>
@@ -108,7 +108,7 @@ const Projects = () => {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center space-x-2 px-6 py-3 bg-gray-900 text-white rounded-xl hover:bg-gray-700 transition-all duration-200 text-sm font-semibold shadow-lg hover:shadow-xl"
+                      className="flex items-center space-x-2 px-6 py-3 bg-gray-900 text-white rounded-xl hover:bg-gray-700 hover:scale-105 transition-all duration-200 text-sm font-semibold shadow-lg hover:shadow-xl"
                     >
                       <Github size={18} />
                       <span>View Source</span>
@@ -117,7 +117,7 @@ const Projects = () => {
                       href={project.demo}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center space-x-2 px-6 py-3 border-2 border-gray-600 text-gray-300 rounded-xl hover:bg-gray-700 transition-all duration-200 text-sm font-semibold"
+                      className="flex items-center space-x-2 px-6 py-3 border-2 border-gray-600 text-gray-300 rounded-xl hover:bg-gray-700 hover:border-blue-500 hover:scale-105 transition-all duration-200 text-sm font-semibold"
                     >
                       <ExternalLink size={18} />
                       <span>Live Demo</span>
@@ -131,7 +131,7 @@ const Projects = () => {
 
         {/* Call to Action */}
         <div className="text-center mt-20">
-          <div className="bg-gray-800 rounded-3xl shadow-xl p-10 max-w-3xl mx-auto border border-gray-700">
+          <div className="bg-gray-800 rounded-3xl shadow-xl p-10 max-w-3xl mx-auto border border-gray-700 hover:shadow-2xl hover:border-blue-500/50 hover:-translate-y-2 transition-all duration-300">
             <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
               <Database size={32} className="text-white" />
             </div>

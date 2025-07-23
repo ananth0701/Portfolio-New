@@ -83,7 +83,7 @@ const Skills = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => (
-            <div key={index} className="group bg-gray-900 rounded-2xl shadow-lg border border-gray-700 overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+            <div key={index} className="group bg-gray-900 rounded-2xl shadow-lg border border-gray-700 overflow-hidden hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 hover:-translate-y-2 hover:border-blue-500/50">
               {/* Header */}
               <div className={`bg-gradient-to-r ${category.color} p-6 text-white`}>
                 <div className="flex items-center space-x-4">
@@ -99,7 +99,7 @@ const Skills = () => {
                 {category.skills.map((skill, skillIndex) => (
                   <div key={skillIndex} className="space-y-2">
                     <div className="flex justify-between items-center">
-                      <span className="font-medium text-white">{skill.name}</span>
+                      <span className="font-medium text-white group-hover:text-blue-300 transition-colors duration-300">{skill.name}</span>
                       <span className="text-sm font-bold text-gray-300">{skill.level}%</span>
                     </div>
                     <div className="w-full bg-gray-700 rounded-full h-3 overflow-hidden">
@@ -127,7 +127,7 @@ const Skills = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="text-center">
-              <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4 hover:scale-110 hover:bg-blue-400 transition-all duration-300 cursor-pointer">
                 <BarChart3 size={32} className="text-white" />
               </div>
               <h4 className="font-semibold text-white mb-2">Data Visualization</h4>
@@ -135,7 +135,7 @@ const Skills = () => {
             </div>
             
             <div className="text-center">
-              <div className="w-16 h-16 bg-indigo-500 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-indigo-500 rounded-full flex items-center justify-center mx-auto mb-4 hover:scale-110 hover:bg-indigo-400 transition-all duration-300 cursor-pointer">
                 <Database size={32} className="text-white" />
               </div>
               <h4 className="font-semibold text-white mb-2">Data Analytics</h4>
@@ -143,7 +143,7 @@ const Skills = () => {
             </div>
             
             <div className="text-center">
-              <div className="w-16 h-16 bg-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4 hover:scale-110 hover:bg-emerald-400 transition-all duration-300 cursor-pointer">
                 <Database size={32} className="text-white" />
               </div>
               <h4 className="font-semibold text-white mb-2">Data Engineering</h4>
@@ -151,7 +151,7 @@ const Skills = () => {
             </div>
             
             <div className="text-center">
-              <div className="w-16 h-16 bg-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4 hover:scale-110 hover:bg-cyan-400 transition-all duration-300 cursor-pointer">
                 <Cloud size={32} className="text-white" />
               </div>
               <h4 className="font-semibold text-white mb-2">Cloud Computing</h4>

@@ -19,7 +19,7 @@ const Footer = () => {
                 href="https://github.com/ananth0701"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors duration-200"
+                className="text-gray-400 hover:text-white hover:scale-110 transition-all duration-200"
               >
                 <Github size={24} />
               </a>
@@ -27,13 +27,13 @@ const Footer = () => {
                 href="https://linkedin.com/ananthnatherukulla"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors duration-200"
+                className="text-gray-400 hover:text-white hover:scale-110 transition-all duration-200"
               >
                 <Linkedin size={24} />
               </a>
               <a
                 href="mailto:ananthnatherukulla@gmail.com"
-                className="text-gray-400 hover:text-white transition-colors duration-200"
+                className="text-gray-400 hover:text-white hover:scale-110 transition-all duration-200"
               >
                 <Mail size={24} />
               </a>
@@ -45,27 +45,27 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#about" className="text-gray-300 hover:text-white transition-colors duration-200">
+                <a href="#about" className="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-200">
                   About
                 </a>
               </li>
               <li>
-                <a href="#skills" className="text-gray-300 hover:text-white transition-colors duration-200">
+                <a href="#skills" className="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-200">
                   Skills
                 </a>
               </li>
               <li>
-                <a href="#projects" className="text-gray-300 hover:text-white transition-colors duration-200">
+                <a href="#projects" className="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-200">
                   Projects
                 </a>
               </li>
               <li>
-                <a href="#experience" className="text-gray-300 hover:text-white transition-colors duration-200">
+                <a href="#experience" className="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-200">
                   Experience
                 </a>
               </li>
               <li>
-                <a href="#contact" className="text-gray-300 hover:text-white transition-colors duration-200">
+                <a href="#contact" className="text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-200">
                   Contact
                 </a>
               </li>
@@ -78,13 +78,13 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-300">
               <li className="flex items-center">
                 <FileText size={16} className="mr-2" />
-                <a href="https://github.com/ananth0701" className="hover:text-white transition-colors duration-200">
+                <a href="https://github.com/ananth0701" className="hover:text-white hover:translate-x-1 transition-all duration-200">
                   Resume/CV
                 </a>
               </li>
               <li className="flex items-center">
                 <Calendar size={16} className="mr-2" />
-                <a href="mailto:ananthnatherukulla@gmail.com" className="hover:text-white transition-colors duration-200">
+                <a href="mailto:ananthnatherukulla@gmail.com" className="hover:text-white hover:translate-x-1 transition-all duration-200">
                   Schedule Meeting
                 </a>
               </li>

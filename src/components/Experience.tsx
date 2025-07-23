@@ -100,7 +100,7 @@ const Experience = () => {
                 <div key={index} className="relative mb-12 last:mb-0">
                   <div className={`absolute left-6 w-4 h-4 ${getTypeColor(exp.type)} rounded-full border-4 border-gray-900 shadow-lg`}></div>
                   
-                  <div className="ml-20 bg-gray-800 rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border border-gray-700">
+                  <div className="ml-20 bg-gray-800 rounded-xl shadow-lg p-6 hover:shadow-xl hover:shadow-blue-500/10 hover:-translate-y-1 transition-all duration-300 border border-gray-700 hover:border-blue-500/50">
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
                       <div>
                         <h4 className="text-xl font-semibold text-white mb-1">
@@ -144,7 +144,7 @@ const Experience = () => {
             </h3>
             <div className="space-y-8">
               {education.map((edu, index) => (
-                <div key={index} className="bg-gray-800 rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border border-gray-700">
+                <div key={index} className="bg-gray-800 rounded-xl shadow-lg p-6 hover:shadow-xl hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-300 border border-gray-700 hover:border-indigo-500/50">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
                     <div>
                       <h4 className="text-xl font-semibold text-white mb-1">

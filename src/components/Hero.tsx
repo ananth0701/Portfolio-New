@@ -87,23 +87,23 @@ const Hero = () => {
                   href="https://github.com/ananth0701"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-4 bg-gray-800 border border-gray-700 rounded-full hover:bg-gray-700 transition-all duration-300 hover:scale-110 shadow-lg"
+                  className="group p-4 bg-gray-800 border border-gray-700 rounded-full hover:bg-gray-700 hover:border-blue-500 transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-blue-500/25"
                 >
-                  <Github size={24} className="text-gray-300" />
+                  <Github size={24} className="text-gray-300 group-hover:text-blue-400 transition-colors duration-300" />
                 </a>
                 <a
                   href="https://linkedin.com/in/ananthnatherukulla"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-4 bg-gray-800 border border-gray-700 rounded-full hover:bg-gray-700 transition-all duration-300 hover:scale-110 shadow-lg"
+                  className="group p-4 bg-gray-800 border border-gray-700 rounded-full hover:bg-gray-700 hover:border-blue-500 transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-blue-500/25"
                 >
-                  <Linkedin size={24} className="text-gray-300" />
+                  <Linkedin size={24} className="text-gray-300 group-hover:text-blue-400 transition-colors duration-300" />
                 </a>
                 <a
                   href="mailto:ananthnatherukulla@gmail.com"
-                  className="p-4 bg-gray-800 border border-gray-700 rounded-full hover:bg-gray-700 transition-all duration-300 hover:scale-110 shadow-lg"
+                  className="group p-4 bg-gray-800 border border-gray-700 rounded-full hover:bg-gray-700 hover:border-blue-500 transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-blue-500/25"
                 >
-                  <Mail size={24} className="text-gray-300" />
+                  <Mail size={24} className="text-gray-300 group-hover:text-blue-400 transition-colors duration-300" />
                 </a>
               </div>
             </div>
@@ -113,8 +113,8 @@ const Hero = () => {
           <div className="animate-fade-in lg:flex lg:justify-center">
             <div className="relative">
               {/* Main Profile Circle */}
-              <div className="w-80 h-80 mx-auto bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-600 rounded-full flex items-center justify-center shadow-2xl border-4 border-gray-700 relative overflow-hidden">
-                <Database size={120} className="text-white z-10" />
+              <div className="w-80 h-80 mx-auto bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-600 rounded-full flex items-center justify-center shadow-2xl border-4 border-gray-700 relative overflow-hidden hover:shadow-3xl hover:scale-105 transition-all duration-500 cursor-pointer group">
+                <Database size={120} className="text-white z-10 group-hover:scale-110 transition-transform duration-500" />
                 
                 {/* Floating Elements */}
                 <div className="absolute top-4 right-4 w-12 h-12 bg-blue-400/20 rounded-full flex items-center justify-center animate-bounce">
@@ -137,17 +137,17 @@ const Hero = () => {
               </div>
 
               {/* Stats Cards */}
-              <div className="absolute -bottom-8 -left-8 bg-gray-800/90 backdrop-blur-sm border border-gray-700 rounded-2xl p-4 shadow-xl">
+              <div className="absolute -bottom-8 -left-8 bg-gray-800/90 backdrop-blur-sm border border-gray-700 rounded-2xl p-4 shadow-xl hover:bg-gray-700/90 hover:border-blue-500 hover:scale-110 transition-all duration-300 cursor-pointer">
                 <div className="text-2xl font-bold text-blue-400">96%</div>
                 <div className="text-xs text-gray-400">Model Accuracy</div>
               </div>
 
-              <div className="absolute -top-8 -right-8 bg-gray-800/90 backdrop-blur-sm border border-gray-700 rounded-2xl p-4 shadow-xl">
+              <div className="absolute -top-8 -right-8 bg-gray-800/90 backdrop-blur-sm border border-gray-700 rounded-2xl p-4 shadow-xl hover:bg-gray-700/90 hover:border-purple-500 hover:scale-110 transition-all duration-300 cursor-pointer">
                 <div className="text-2xl font-bold text-purple-400">10+</div>
                 <div className="text-xs text-gray-400">Certifications</div>
               </div>
 
-              <div className="absolute top-1/2 -left-12 bg-gray-800/90 backdrop-blur-sm border border-gray-700 rounded-2xl p-4 shadow-xl">
+              <div className="absolute top-1/2 -left-12 bg-gray-800/90 backdrop-blur-sm border border-gray-700 rounded-2xl p-4 shadow-xl hover:bg-gray-700/90 hover:border-green-500 hover:scale-110 transition-all duration-300 cursor-pointer">
                 <div className="text-2xl font-bold text-green-400">6+</div>
                 <div className="text-xs text-gray-400">Projects</div>
               </div>
