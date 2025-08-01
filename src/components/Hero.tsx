@@ -112,28 +112,125 @@ const Hero = () => {
           {/* Right Column - Visual Elements */}
           <div className="animate-fade-in lg:flex lg:justify-center">
             <div className="relative">
-              {/* Main Profile Circle */}
-              <div className="w-80 h-80 mx-auto bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-600 rounded-full flex items-center justify-center shadow-2xl border-4 border-gray-700 relative overflow-hidden hover:shadow-3xl hover:scale-105 transition-all duration-500 cursor-pointer group">
-                <Database size={120} className="text-white z-10 group-hover:scale-110 transition-transform duration-500" />
-                
-                {/* Floating Elements */}
-                <div className="absolute top-4 right-4 w-12 h-12 bg-blue-400/20 rounded-full flex items-center justify-center animate-bounce">
-                  <BarChart3 size={24} className="text-blue-300" />
-                </div>
-                <div className="absolute bottom-4 left-4 w-12 h-12 bg-purple-400/20 rounded-full flex items-center justify-center animate-bounce delay-500">
-                  <TrendingUp size={24} className="text-purple-300" />
-                </div>
-                <div className="absolute top-1/2 left-0 w-10 h-10 bg-indigo-400/20 rounded-full flex items-center justify-center animate-bounce delay-1000">
-                  <Brain size={20} className="text-indigo-300" />
-                </div>
-              </div>
+              {/* Data Science Dashboard */}
+              <div className="w-96 h-96 mx-auto relative">
+                {/* Main Dashboard Container */}
+                <div className="w-full h-full bg-gradient-to-br from-gray-800 via-gray-900 to-black rounded-3xl shadow-2xl border border-gray-600 overflow-hidden hover:shadow-3xl hover:scale-105 transition-all duration-500 cursor-pointer group">
+                  {/* Dashboard Header */}
+                  <div className="bg-gradient-to-r from-blue-600 to-indigo-600 p-4 flex items-center justify-between">
+                    <div className="flex items-center space-x-2">
+                      <Database size={20} className="text-white" />
+                      <span className="text-white font-semibold text-sm">Data Analytics Dashboard</span>
+                    </div>
+                    <div className="flex space-x-1">
+                      <div className="w-2 h-2 bg-red-400 rounded-full"></div>
+                      <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
+                      <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                    </div>
+                  </div>
 
-              {/* Orbiting Elements */}
-              <div className="absolute inset-0 animate-spin" style={{ animationDuration: '20s' }}>
-                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-4 w-8 h-8 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full opacity-60"></div>
-                <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-4 w-6 h-6 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full opacity-60"></div>
-                <div className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-4 w-4 h-4 bg-gradient-to-r from-green-500 to-teal-500 rounded-full opacity-60"></div>
-                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-4 w-5 h-5 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full opacity-60"></div>
+                  {/* Dashboard Content */}
+                  <div className="p-6 space-y-4">
+                    {/* Top Row - Charts */}
+                    <div className="grid grid-cols-2 gap-4">
+                      {/* Bar Chart */}
+                      <div className="bg-gray-700/50 rounded-xl p-3 hover:bg-gray-600/50 transition-all duration-300">
+                        <div className="flex items-center justify-between mb-2">
+                          <BarChart3 size={16} className="text-blue-400" />
+                          <span className="text-xs text-gray-300">Sales</span>
+                        </div>
+                        <div className="flex items-end space-x-1 h-12">
+                          <div className="w-2 bg-blue-500 rounded-t" style={{ height: '60%' }}></div>
+                          <div className="w-2 bg-blue-500 rounded-t" style={{ height: '80%' }}></div>
+                          <div className="w-2 bg-blue-500 rounded-t" style={{ height: '40%' }}></div>
+                          <div className="w-2 bg-blue-500 rounded-t" style={{ height: '90%' }}></div>
+                          <div className="w-2 bg-blue-500 rounded-t" style={{ height: '70%' }}></div>
+                        </div>
+                      </div>
+
+                      {/* Line Chart */}
+                      <div className="bg-gray-700/50 rounded-xl p-3 hover:bg-gray-600/50 transition-all duration-300">
+                        <div className="flex items-center justify-between mb-2">
+                          <TrendingUp size={16} className="text-green-400" />
+                          <span className="text-xs text-gray-300">Growth</span>
+                        </div>
+                        <div className="relative h-12">
+                          <svg className="w-full h-full" viewBox="0 0 60 40">
+                            <polyline
+                              fill="none"
+                              stroke="#10b981"
+                              strokeWidth="2"
+                              points="5,35 15,25 25,30 35,15 45,20 55,10"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Middle Row - Pie Chart */}
+                    <div className="bg-gray-700/50 rounded-xl p-3 hover:bg-gray-600/50 transition-all duration-300">
+                      <div className="flex items-center justify-between mb-2">
+                        <Brain size={16} className="text-purple-400" />
+                        <span className="text-xs text-gray-300">Model Performance</span>
+                      </div>
+                      <div className="flex items-center justify-center">
+                        <div className="relative w-16 h-16">
+                          <svg className="w-full h-full transform -rotate-90" viewBox="0 0 36 36">
+                            <path
+                              d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                              fill="none"
+                              stroke="#374151"
+                              strokeWidth="3"
+                            />
+                            <path
+                              d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                              fill="none"
+                              stroke="#8b5cf6"
+                              strokeWidth="3"
+                              strokeDasharray="96, 100"
+                            />
+                          </svg>
+                          <div className="absolute inset-0 flex items-center justify-center">
+                            <span className="text-xs font-bold text-purple-400">96%</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Bottom Row - Data Points */}
+                    <div className="grid grid-cols-3 gap-2">
+                      <div className="bg-gray-700/50 rounded-lg p-2 text-center hover:bg-gray-600/50 transition-all duration-300">
+                        <div className="text-sm font-bold text-blue-400">1.2M</div>
+                        <div className="text-xs text-gray-400">Records</div>
+                      </div>
+                      <div className="bg-gray-700/50 rounded-lg p-2 text-center hover:bg-gray-600/50 transition-all duration-300">
+                        <div className="text-sm font-bold text-green-400">99.8%</div>
+                        <div className="text-xs text-gray-400">Uptime</div>
+                      </div>
+                      <div className="bg-gray-700/50 rounded-lg p-2 text-center hover:bg-gray-600/50 transition-all duration-300">
+                        <div className="text-sm font-bold text-yellow-400">15ms</div>
+                        <div className="text-xs text-gray-400">Latency</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Floating Data Elements */}
+                <div className="absolute -top-4 -right-4 w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg animate-bounce hover:scale-110 transition-transform duration-300">
+                  <BarChart3 size={20} className="text-white" />
+                </div>
+
+                <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-gradient-to-r from-purple-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg animate-bounce delay-500 hover:scale-110 transition-transform duration-300">
+                  <TrendingUp size={20} className="text-white" />
+                </div>
+
+                <div className="absolute top-1/2 -left-6 w-10 h-10 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center shadow-lg animate-bounce delay-1000 hover:scale-110 transition-transform duration-300">
+                  <Brain size={16} className="text-white" />
+                </div>
+
+                <div className="absolute top-1/4 -right-6 w-8 h-8 bg-gradient-to-r from-indigo-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg animate-bounce delay-700 hover:scale-110 transition-transform duration-300">
+                  <Database size={14} className="text-white" />
+                </div>
               </div>
 
               {/* Stats Cards */}
