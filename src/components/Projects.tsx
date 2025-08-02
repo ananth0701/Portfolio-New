@@ -8,7 +8,7 @@ const Projects = () => {
       description: 'Developed a comprehensive diabetes risk prediction model using the Pima Indian Diabetes Dataset. Achieved 96% accuracy through advanced feature engineering and model optimization, reducing false positives by 12% and improving precision by 15%.',
       technologies: ['Python', 'Pandas', 'Scikit-learn', 'NumPy', 'Logistic Regression', 'Decision Trees', 'KNN'],
       image: Heart,
-      github: 'https://github.com/ananth0701',
+      github: 'https://github.com/ananth0701/Diabetes-Prediction-Using-Machine-Learning',
       demo: '#',
       category: 'Healthcare ML',
       metrics: ['96% Accuracy', '12% Reduction in False Positives', '15% Precision Improvement'],
