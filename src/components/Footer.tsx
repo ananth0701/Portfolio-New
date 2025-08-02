@@ -78,13 +78,13 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-300">
               <li className="flex items-center">
                 <FileText size={16} className="mr-2" />
-                <a href="https://github.com/ananth0701" className="hover:text-white hover:translate-x-1 transition-all duration-200">
+                <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:ac0f088c-f654-4396-a6f2-b3f92bf743bf" className="hover:text-white hover:translate-x-1 transition-all duration-200">
                   Resume/CV
                 </a>
               </li>
               <li className="flex items-center">
                 <Calendar size={16} className="mr-2" />
-                <a href="mailto:ananthnatherukulla@gmail.com" className="hover:text-white hover:translate-x-1 transition-all duration-200">
+                <a href="ananthnatherukulla@gmail.com" className="hover:text-white hover:translate-x-1 transition-all duration-200">
                   Schedule Meeting
                 </a>
               </li>
