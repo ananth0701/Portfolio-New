@@ -25,10 +25,13 @@ const Navigation: React.FC<NavigationProps> = ({ currentPage }) => {
 
       if (currentPage !== 'home') return;
 
-      const scrollPosition = window.scrollY;
+      // Extract document zoom to scale scroll coordinates appropriately
+      const zoom = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('zoom')) || 1;
+      const scrollPosition = window.scrollY / zoom;
+      const viewportHeight = window.innerHeight / zoom;
 
       // Check if user has scrolled to the bottom of the page
-      if (window.innerHeight + scrollPosition >= document.documentElement.scrollHeight - 50) {
+      if (viewportHeight + scrollPosition >= document.documentElement.scrollHeight - 50) {
         setActiveSection('contact');
         return;
       }
